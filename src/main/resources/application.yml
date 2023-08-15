@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: key.yml
 
   h2:
     console:
@@ -23,3 +25,9 @@ spring:
 logging:
   level:
     study.tutorial: debug
+
+jwt:
+  header: Authorization
+  secret: ${jwt-secret}
+  token-validity-in-seconds: 86400
+
